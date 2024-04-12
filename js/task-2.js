@@ -4,7 +4,12 @@ function calcAverageCalories(days){
         totalCalories += day.calories;
     }
     const averageCalories = totalCalories / days.length;
-    return averageCalories;
+    if (days.length > 0){
+      return averageCalories;
+    } else {
+      return 0;
+    }
+    
 }
 
 console.log(
